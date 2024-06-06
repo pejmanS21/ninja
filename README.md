@@ -49,3 +49,17 @@ Other frameworks used:
 - [Vue.js](https://vuejs.org/)
 - [Bootstrap](https://getbootstrap.com/)
 - [Parcel.js](https://parceljs.org/)
+
+## Docker
+
+### Build
+
+```bash
+docker build -t pejmans21/cityjson -f .docker/Dockerfile .
+```
+
+### Run
+
+```bash
+docker run -ti --name cityjson --restart always -p 9080:9080 pejmans21/cityjson
+```
